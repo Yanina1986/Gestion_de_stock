@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Persona } from '../class/persona';
+import { Persona } from '../Clases/persona';
 import { Router } from '@angular/router';
 import { text } from 'stream/consumers';
 
