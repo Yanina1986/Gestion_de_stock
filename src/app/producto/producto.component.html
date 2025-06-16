@@ -1,1 +1,6 @@
-<p>producto works!</p>
+<p>nombre</p> <input type="text" [(ngModel)]="miProducto.nombre">
+<p>moneda</p> <input type="text" [(ngModel)]="miProducto.moneda">
+<p>precio</p> <input type="text" [(ngModel)]="miProducto.precio">
+<p>tipoProducto</p> <input type="text" [(ngModel)]="miProducto.tipoProducto">
+
+<input type="button" value="Guardar"(click)="guardar()">

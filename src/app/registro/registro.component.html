@@ -1,0 +1,23 @@
+<p>Nombre:
+    <input type="text" [(ngModel)]="usuario.nombre">
+</p>
+<p>Apellido:
+    <input type="text" [(ngModel)]="usuario.apellido">
+</p>
+<p>Usuario:
+    <input type="text" [(ngModel)]="usuario.usuario">
+</p>
+<p>Contraseña:
+    <input [type]="tipo" [(ngModel)]="usuario.password">
+    <input type="button" value="mostrar contraseña" (click)="mostrarPass()">
+</p>
+<p>Reingrese la Contraseña:
+    <input [type]="tipo" [(ngModel)]="password">
+</p>
+<h5 *ngIf="this.password != this.usuario.password">las contraseñas no coincide</h5>
+<div *ngIf="this.indexPersona<0;else modificar">
+    <button (click)="registrarUsuario()">Registrar</button>
+</div>
+<ng-template #modificar>
+    <button (click)="modificarUsuario()">Modificar</button>
+</ng-template>

@@ -5,6 +5,7 @@ import path from 'path';
 import { Producto } from './Clases/producto';
 import { Component } from '@angular/core';
 import { ProductoComponent } from './producto/producto.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 
@@ -12,6 +13,7 @@ import { ProductoComponent } from './producto/producto.component';
 export const routes: Routes = [
     {path: "",component: HomeComponent},
     {path: "login", component: LoginComponent},
+    {path: "registro",component:RegistroComponent}, 
     {path: "producto",component: ProductoComponent},
 
 ];
