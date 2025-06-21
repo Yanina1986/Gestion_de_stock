@@ -14,7 +14,7 @@
 <p>Reingrese la Contraseña:
     <input [type]="tipo" [(ngModel)]="password">
 </p>
-<h5 *ngIf="this.password != this.usuario.password">las contraseñas no coincide</h5>
+<h5 *ngIf="this.password != this.usuario.password">contraseña incorrectas</h5>
 <div *ngIf="this.indexPersona<0;else modificar">
     <button (click)="registrarUsuario()">Registrar</button>
 </div>

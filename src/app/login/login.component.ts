@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Persona } from '../Clases/persona';
 import { Router } from '@angular/router';
-import { text } from 'stream/consumers';
 
 @Component({
   selector: 'app-login',
@@ -34,6 +33,8 @@ export class LoginComponent {
     this.tipo ="password";
   
   }
+
+  
   public mensaje: string = "Bienvenidos";
   public password: string = "";
   public tipo: string = "password";

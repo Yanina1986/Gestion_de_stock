@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Persona } from '../Clases/persona';
+import { Persona } from '../../Clases/persona';
 import { CommonModule,NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
 @Component({

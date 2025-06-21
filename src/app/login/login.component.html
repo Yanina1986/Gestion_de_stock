@@ -1,23 +1,50 @@
+<div class="container text-center">
+    <div class="row">
+        <label class="col-12 col-sm-6 col-md-3 col-lg-2 ">Usuario:</label>
+        <input class="col-12 col-sm-6 col-md-3 col-lg-2 " type="text" [(ngModel)]="usuario.usuario">
+
+
+        <label class="col-12 col-sm-6 col-md-3 col-lg-2 "> Contraseña: </label>
+        <input class="col-12 col-sm-6 col-md-3 col-lg-2 " [type]="tipo" [(ngModel)]="usuario.password">
+
+    </div>
+
+
+    <input type="button" value="mostrar contraseña" (click)="mostrarPass()">
+
+    <button (click)="loguear()">Loguearme</button>
+
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4> Sign in to GitHub</h4>
+
 <h1>{{mensaje}}</h1>
 
 <form>
 
     <label for="login_field">
-        <label for="username">Usuario:</label>
+        Username or email address
     </label>
-    <input type="text" id="username" name="username" required><br><br>
+    <input [type]="tipo" name="login" [value]="mensaje" required="required">
+    <input [type]="tipo" name="login" [(ngModel)]="mensaje" required="required">
+
     <div class="position-relative">
         <label for="password">
             Password
         </label>
         <input type="password" [(ngModel)]="password" name="password">
-        
         <br>
-        <br>
-     
-        <button (click)="loguear()">Loguearme</button>
-        
+        <input type="button" value="Sign in" (click)="aceptar()">
+        <input type="button" value="cambiar a boton" (click)="boton()">
     </div>
-    
 </form>
-  
