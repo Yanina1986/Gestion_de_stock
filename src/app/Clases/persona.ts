@@ -1,10 +1,5 @@
 export class Persona {
-    public nombre!: string;
-    public password!: string;
-    public apellido!: string;
-    public usuario!: string;
-}
-/*export class Persona {
+ 
     
 
     private _id !: number;
@@ -49,4 +44,4 @@ export class Persona {
     set password(v : string) {
         this._password = v;
     }
-}*/
+}

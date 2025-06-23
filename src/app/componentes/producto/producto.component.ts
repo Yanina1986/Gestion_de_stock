@@ -15,7 +15,24 @@ import { ProductoService } from '../../servicios/producto.service';
   styleUrl: './producto.component.css'
 })
 export class ProductoComponent {
-  public miProducto!: Producto;
+  public miProducto: Producto;
+
+  constructor (){
+    this.miProducto = new Producto();
+  }
+
+  public guardar(){
+    let producto:Array<Producto> = JSON.parse(localStorage.getItem("productos")??'[]');
+    this.miProducto.id = producto.length +1;
+    producto.push(this.miProducto);
+    localStorage.setItem('producto',JSON.stringify(producto));
+  }
+  public limpiar() {
+    this.miProducto = new Producto();
+  }
+}
+
+  /*public miProducto!: Producto;
 
 
  constructor(public activeRoute : ActivatedRoute, public produtoService: ProductoService ){
@@ -58,4 +75,4 @@ export class ProductoComponent {
   }
 
  
-}
+}*/

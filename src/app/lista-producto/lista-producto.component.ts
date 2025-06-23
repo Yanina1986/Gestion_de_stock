@@ -26,5 +26,9 @@ export class ListaProductoComponent {
   public editar(id: number) {
     this.route.navigateByUrl("producto/" + id.toString());
   }
+  public eliminar(id: number){
+    this.route.navigateByUrl("producto/"+id.toString());
+  }
+    
 
 }
